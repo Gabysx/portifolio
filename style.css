@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color:#1C1E53;
+    --text-hover-color:#5E3BEE;
+    --bg-color:#fbfff8;
+    --color-mask: #fff;
+    --color-destack: #0ac479;
+}
+/* light theme */
+.dark-theme{
+    --text-color:#fff;
+    --text-hover-color:#5E3BEE;
+    --bg-color:#070322;
+    --color-mask: #07001d;
+    --color-destack: #0ac479;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+}
+
+
+/* Header */
+header{
+    background-color:var(--color-mask) ;
+    padding: 10px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav img{
+    width: 120px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+li > a:hover{
+    color: var(--text-hover-color);
+}
+
+nav > #contato{
+    color: var(--color-destack);
+    text-decoration: none;
+    border: 2px solid var(--color-destack);
+    border-radius: 5px;
+    padding: 8px 32px;
+
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+nav > #contato:hover{
+    background: var(--color-destack);
+    color: var(--color-mask);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
