@@ -1,3 +1,7 @@
+@font-face { font-family: 'Cloud Soft light'; src: url('./assets/fonts/Cloud\ Soft-Light_0658c0c2bc967a13e7044a96e62871fd.otf'); }
+@font-face { font-family: 'Cloud Soft Bold'; src: url('./assets/fonts/CloudSoft-Bold\ 700.otf'); }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -21,27 +25,28 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
+    height: 100vh;
 }
 
 
 /* Header */
 header{
+    font-family: 'Cloud Soft bold', "Inter", sans-serif;
     background-color:var(--color-mask) ;
-    padding: 10px;
+    padding: 10px 50px;
 }
 
 header nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     padding: 0 20px;
 }
 
 nav img{
-    width: 120px;
+    width: 135px;
 }
 
 nav ul{
@@ -55,7 +60,7 @@ nav ul{
 nav > ul > li > a{
     text-decoration: none;
     color: var(--text-color);
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 600;
     letter-spacing: 0.1em;
 }
@@ -71,7 +76,7 @@ nav > #contato{
     border-radius: 5px;
     padding: 8px 32px;
 
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
     letter-spacing: 0.1em;
 }
@@ -83,6 +88,16 @@ nav > #contato:hover{
     transition: 0.5s;
 }
 
+/*Container*/
+
+section.container {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 360px;
+  margin: 56px auto 0px;
+  padding: 0px 50px;
+}
+
 /* Home */
 
 .home{
@@ -90,5 +105,42 @@ nav > #contato:hover{
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto; 
+}
+
+section.imagem-central > img{
+    width: 100%;
+    max-width: 650px;
+    min-width: 350px;
+ 
+}
+
+section.inicio{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    width: 50%;
+}
+
+section.inicio h1{
+    font-family: 'Cloud Soft bold', "Inter", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+}   
+
+section.inicio p{
+    font-family: 'Cloud Soft light', "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+section.inicio span{
+    font-family: 'Cloud Soft bold', "Inter", sans-serif;
+    font-weight: 600;
+    color: var(--color-destack);
 }
