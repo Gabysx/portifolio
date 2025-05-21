@@ -83,4 +83,12 @@ nav > #contato:hover{
     transition: 0.5s;
 }
 
+/* Home */
 
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    gap: 30px;
+}
