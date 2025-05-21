@@ -13,7 +13,7 @@
     --text-hover-color:#5E3BEE;
     --bg-color:#fbfff8;
     --color-mask: #fff;
-    --color-destack: #0ac479;
+    --color-destack: #0bb16e;
 }
 /* light theme */
 .dark-theme{
@@ -139,8 +139,13 @@ section.inicio p{
     font-weight: 600;
     color: var(--text-color);
 }
-section.inicio span{
+section.inicio h1 span{
     font-family: 'Cloud Soft bold', "Inter", sans-serif;
     font-weight: 600;
     color: var(--color-destack);
+}
+section.inicio p span{
+    font-family: 'Cloud Soft bold', "Inter", sans-serif;
+    font-weight: 600;
+    color: var(--text-hover-color);
 }
