@@ -125,7 +125,6 @@ section.inicio{
     justify-content: center;
     align-items: flex-start;
     gap: 5px;
-
     width: 50%;
 }
 
@@ -176,6 +175,14 @@ section.inicio > a:hover{
     box-shadow: 0px 0px 15px rgba(109, 46, 255, 0.562);
 }
 
+section.inicio > a > img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    color: var(--bg-color);
+}
+
+
 /*Habilidades*/
 
 section.habilidades{
@@ -187,9 +194,11 @@ section.habilidades{
     padding: 50px 20px;
     margin: 50px auto;
     width: 100%;
+    min-height: 450px;
+    border-radius: 30px;
 }
 
-section.habilidades ul {
+section.habilidades > ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -197,7 +206,30 @@ section.habilidades ul {
     flex-wrap: wrap;
     gap: 20px;
     list-style: none;
-    padding: 0px 50px;
+    padding: 40px 50px;
+}
+
+section.habilidades > ul > li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 20px 0px;
+
+    font-family: 'Cloud Soft light', "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;   
+    color: var(--text-color);
+    text-align: center;     
+    transition: background 0.5s;
+}
+section.habilidades > ul > li > img{
+    width: 100px;
+    height: 100px;
 }
 
 section.habilidades > h2{
@@ -208,33 +240,97 @@ section.habilidades > h2{
     line-height:1;
 }
 
-section.habilidades > h2 span{
+section.habilidades > p{
     font-family: 'Cloud Soft bold', "Inter", sans-serif;
     font-weight: 600;
     color: var(--color-destack);
-    text-decoration: underline;
-    
 }
 
-.card {
-  width: 200px; 
-  min-height: 150px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.062); 
-  border-radius: 8px; 
-  background-color: #fff; 
-  padding: 16px; 
-  margin: 10px; 
+section.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    margin: 0px auto;
+    width: 100%;
+    min-height: 450px;
 }
 
-.card-content {
-  padding: 16px;
+section.experienceCard > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0px 50px;
+    gap: 80px;
 }
 
-.card-title{
-    font-family: 'Cloud Soft bold', "Inter", sans-serif;
+section.experienceCard > ul > li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    border-radius: 10px;
+    padding: 10px 0px;
+    text-align: center;     
+}
+
+li.card1 > img & li.card2 > img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.card1{
+    border: 1.5px solid var(--text-hover-color);
+}
+.card2{
+    background-color: #5f3bee1c;
+}
+
+section.experienceText {
+    background: #00eeee25;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+section.experienceText > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+    list-style: none;
+    width: 100%;
+    text-align: center;    
+}
+
+
+
+.light-text{
+    font-family: 'Cloud Soft light', "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;   
     color: var(--text-color);
+    text-align: center;     
+}
+
+.bold-text{
+    font-family: 'Cloud Soft bold', "Inter", sans-serif;
+    font-size: 2rem;
     font-weight: 700;
-    font-size: 1.5rem; 
-    line-height: 1;
-    margin-bottom: 8px; 
+    color: var(--text-color);
+}
+
+section.nextDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 20px;
+    margin: 0px auto;
+    width: 100%;
+    min-height: 450px;
 }
