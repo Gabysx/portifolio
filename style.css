@@ -1,7 +1,6 @@
 @font-face { font-family: 'Cloud Soft light'; src: url('./assets/fonts/Cloud\ Soft-Light_0658c0c2bc967a13e7044a96e62871fd.otf'); }
 @font-face { font-family: 'Cloud Soft Bold'; src: url('./assets/fonts/CloudSoft-Bold\ 700.otf'); }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +13,7 @@
     --bg-color:#fbfff8;
     --color-mask: #fff;
     --color-destack: #0bb16e;
+    --text-hover-color-secund: #370bb1;
 }
 /* light theme */
 .dark-theme{
@@ -38,14 +38,14 @@ header{
 }
 
 header nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
     align-items:center;
-    padding: 0 20px;
+    padding: 0 50px;
 }
 
-nav img{
+nav > img{
     width: 135px;
 }
 
@@ -53,7 +53,7 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 20px;
+    gap: 40px;
     list-style: none;
 }
 
@@ -94,13 +94,13 @@ section.container {
   width: 100%;
   max-width: 1920px;
   min-width: 360px;
-  margin: 56px auto 0px;
+  margin: 40px auto 0px;
   padding: 0px 50px;
 }
 
 /* Home */
 
-.home{
+section.home{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
@@ -120,7 +120,8 @@ section.imagem-central > img{
 section.inicio{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     gap: 5px;
 
     width: 50%;
@@ -131,6 +132,8 @@ section.inicio h1{
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--text-color);
+    line-height:1;
+    
 }   
 
 section.inicio p{
@@ -148,4 +151,26 @@ section.inicio p span{
     font-family: 'Cloud Soft bold', "Inter", sans-serif;
     font-weight: 600;
     color: var(--text-hover-color);
+}
+
+section.inicio > a{
+    text-decoration: none;
+    color:var(--color-mask);
+    background-color: var(--text-hover-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 5px;
+
+    font-family: 'Cloud Soft bold', "Inter", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    transition: background 0.9s;
+}
+
+section.inicio > a:hover{
+    background-color: var(--text-hover-color-secund);
+    transition: background 0.9s;
+    box-shadow: 0px 0px 10px var(--text-hover-color);
+    
 }
